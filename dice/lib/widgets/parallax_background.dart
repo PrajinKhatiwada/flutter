@@ -2,7 +2,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 
 class ParallaxBackground extends StatefulWidget {
-  const ParallaxBackground({Key? key}) : super(key: key);
+  const ParallaxBackground({super.key});
 
   @override
   _ParallaxBackgroundState createState() => _ParallaxBackgroundState();
