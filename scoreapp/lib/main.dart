@@ -204,7 +204,7 @@ class _ScoreHomeState extends State<ScoreHome> with SingleTickerProviderStateMix
     final isDark = isDarkMode || MediaQuery.of(context).platformBrightness == Brightness.dark;
     
     return Scaffold(
-      backgroundColor: isDark ? colorScheme.background : Colors.green.shade50,
+      backgroundColor: isDark ? colorScheme.surface : Colors.green.shade50,
       appBar: AppBar(
         elevation: 0,
         title: Text(
@@ -330,7 +330,7 @@ class _ScoreHomeState extends State<ScoreHome> with SingleTickerProviderStateMix
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
             colors: isDark
-                ? [colorScheme.background, colorScheme.background.withOpacity(0.8)]
+                ? [colorScheme.surface, colorScheme.surface.withOpacity(0.8)]
                 : [Colors.green.shade50, Colors.green.shade100],
           ),
         ),
